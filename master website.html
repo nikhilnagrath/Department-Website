@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="utf-8" />
+		<title>ECS</title>
+		<link rel="stylesheet" type="text/css" href="style(w).css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+								integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+								integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+								crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+								integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="header" id="myHeader">
+		<h2>My Header</h2>
+	</div>
+	<div id="content">
+	<section class="main1" id="section-intro" style="height: 662px; opacity: 1; display: block;">
+		<div class="fade-scroll">
+			<div class="spacer"> </div>
+			<h1> <p class="text-white">Welcome to ECE Department</p> </h1>
+			<h2> <p class="text-white">The Human Foot is a masterpiece of engineering and a work of art.</p></h2>
+		</div>
+    </section>
+	<section class="about" id="section-intro" style="height: 662px; opacity: 1; display: block;">
+<div class="main">
+  <section id="section2">
+    <div class="container jumbo">
+      <div class="jumbotron">
+        <h2>Let Big Data Change the Game</h2>
+        <p>In the field of electronic engineering, engineers design and test circuits that use the electromagnetic properties of electrical components such as 
+		resistors, capacitors, inductors, diodes and transistors to achieve a particular functionality. The tuner circuit, which allows the user of a radio to 
+		filter out all but a single station, is just one example of such a circuit.
+		In designing an integrated circuit, electronics engineers first construct circuit schematics that specify the electrical components and describe the
+		interconnections between them. When completed, VLSI engineers convert the schematics into actual layouts, which map the layers of various conductor 
+		and semiconductor materials needed to construct the circuit. The conversion from schematics to layouts can be done by software (see electronic design 
+		automation) but very often requires human fine-tuning to decrease space and power consumption. Once the layout is complete, it can be sent to a fabrication plant for manufacturing.
+		For systems of intermediate complexity, engineers may use VHDL modeling for programmable logic devices and FPGAs
+		Integrated circuits, FPGAs and other electrical components can then be assembled on printed circuit boards to form more complicated circuits. Today,
+		printed circuit boards are found in most electronic devices including televisions, computers and audio players.[6]</p>
+        <p><a class="btn btn-primary btn-lg" href="http://www.nits.ac.in/departments/ece/ece.php" role="button">Learn more</a></p>
+      </div>
+    </div>
+  </section>
+		</div>
+	</section>
+	<section class="events" id="section-intro" style="height: 662px; opacity: 1; display: block; font-family: Apple Chancery, cursive">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="main">
+  <section id="section2">
+    <div class="container jumbo">
+      <div class="jumbotron">
+        <h2>Let Big Data Change the Game</h2>
+        <p>WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as the customers you serve. There is no 'one size 
+		   fits all' approach to marketing. Every business is unique, customers are unique, and your marketing should be as well.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+			</div>
+			<div class="col-md-4">
+				<div class="main">
+  <section id="section2">
+    <div class="container jumbo">
+      <div class="jumbotron">
+        <h2>Let Big Data Change the Game</h2>
+        <p>WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as the customers you serve. There is no 'one size 
+		   fits all' approach to marketing. Every business is unique, customers are unique, and your marketing should be as well.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+			</div>
+			<div class="col-md-4">
+<div class="main">
+  <section id="section2">
+    <div class="container jumbo">
+      <div class="jumbotron">
+        <h2>Let Big Data Change the Game</h2>
+        <p>WebCorpCo is all about making sure your marketing stack is in alignment with your company as well as the customers you serve. There is no 'one size
+		   fits all' approach to marketing. Every business is unique, customers are unique, and your marketing should be as well.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+    </div>
+  </section>
+</div>
+			</div>
+		</div>
+	</section>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                var documentEl = $(document),
+                    fadeElem = $('.fade-scroll');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/400);
+                    }); 
+                });
+                
+            });
+			
+			
+			
+			// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+// Get the header
+var header = document.getElementById("myHeader");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+        
+		
+		
+		$(document).ready(function() {
+    var contentPlacement = $('#header').position().top + $('#header').height();
+    $('#content').css('margin-top',contentPlacement);
+});
+
+
+        </script>
+</body>
+</html>

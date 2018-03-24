@@ -1,0 +1,85 @@
+
+body{
+	width:100%;
+	text-align:center;
+	display:-webkit-box;
+	-webkit-box-pack:center;
+	
+}
+
+.main1{
+   background-image: url("master.png");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   text-align: center;
+   background-attachment: fixed;
+}
+.about{
+   text-align: center;
+   overflow-x: hidden;
+   word-spacing: 8px;
+}
+.events{
+   text-align: center;
+   overflow-x: hidden;
+   word-spacing: 8px;
+}
+#layout_las{
+	background: #7F8074;
+	-webkit-border-radius:25px;  
+	word-spacing: 8px;
+}
+
+.header {
+  padding: 10px 16px;
+  background: white;
+  color: grey;
+     width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+
+.spacer{
+	padding-top: 20%;
+}
+ p {
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 60px;
+  padding-bottom: 50px;
+  line-height: 80px;
+  color: #fff;
+  font-weight: 700 !important;
+  text-align: center;
+}
+.jumbo {
+  margin-top: 50px;
+}
+
+img, 
+figure {
+  max-width: 100%;
+}
