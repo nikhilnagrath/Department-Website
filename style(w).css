@@ -14,16 +14,24 @@ body{
    text-align: center;
    background-attachment: fixed;
 }
+
 .about{
    text-align: center;
    overflow-x: hidden;
    word-spacing: 8px;
- 
+   background-image: url("");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
 }
 .events{
    text-align: center;
    overflow-x: hidden;
    word-spacing: 8px;
+   background-image: url("back2.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
 }
 #layout_las{
 	background: #7F8074;
@@ -83,4 +91,8 @@ h1 {
 img, 
 figure {
   max-width: 100%;
+}
+
+ul{
+	text-align:left;
 }
